@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.default-btn {
+  width: 200px;
+  height: 45px;
+  border-radius: 30px;
+  background: #4985FF;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.default-btn:hover {
+  transform: scale(1.03);
+}
+
+.default-btn:active {
+  box-shadow: 0 0 10px -2px #000000;
+  transform: translateY(2px);
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.default-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  color: #323232;
+  margin-bottom: 50px;
+}
+
+.default-title_white {
+  color: #FFFFFF;
+  margin-bottom: 70px;
+}
+
+.default-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;  
+}
+
+.default-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;  
+  color: #999999;
+}
+
+.default__link {
+  color: #4985ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(assets/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header__nav {
+  border-bottom: 1px solid #A1A1A1;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20vw;
+}
+
+.header__menu-item {
+  list-style-type: none;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 39px 20px;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.header__link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.header__text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: 220px;
+}
+
+.header__title {
+  font-weight: 800;
+  font-size:48px;
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 64px;
+}
+
+.services {
+  text-align: center;
+}
+
+.services__title {
+  margin-top: 110px;
+}
+
+.services__text {
+  width: 730px;
+  margin: 0 auto 80px;
+}
+
+.services__content {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-bottom: 55px;
+}
+  
+.services__item {
+  display: flex;
+}
+
+.services__frame {
+  max-height: 90px;
+  border: 1px solid #4985ff;
+  border-radius: 50%;
+  position: relative;
+  padding: 25px 25px;
+}
+
+.services__frame::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+}
+
+.services__desc {
+  margin-left: 27px;
+  text-align: start;
+}
+
+.services__subtitle {
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.result {
+  width: 100%;
+  background-color: #F6F6F8;
+  margin-top: 105px;
+  padding-bottom: 70px;
+}
+
+.result__content {
+  padding-top: 100px;
+}
+
+.result__desk {
+  display: flex;
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 70px;
+}
+
+.result__box {
+  margin: 50px 120px 0 0;
+}
+
+.result__title  {
+  margin-bottom: 40px;
+}
+
+.mr-30 {
+  margin-bottom: 30px;
+}
+
+.result__picture {
+  border-radius: 30px;
+}
+
+.result__list {
+  display: grid;
+  column-gap: 100px;
+  justify-content: center;
+  grid-template-columns: repeat(5, 104px);
+  margin: 70px auto 0;
+}
+
+.result__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result__number {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 53px;
+  margin-left: 20px;
+}
+
+.all-services {
+  background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #ffffff;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 85px;
+}
+
+.all-services__container {
+  padding: 100px 0 85px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.all-services__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.all-services__btn {
+  padding-top: 20px;
+}
+
+.card__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 30px 0;
+}
+
+.card__number {
+  color: #4985FF;
+}
+
+.project {
+  background: #F6F6F8;
+}
+
+.prodject__info {
+  padding: 100px 0 130px;
+  text-align: center;
+}
+
+.project__links {
+  padding: 70px 0 50px;
+}
+
+.footer {
+  background-color: #F6F6F8;
+  padding-bottom: 30px;
+}
+
+.footer__links {
+  width: 100%;
+  padding: 70px 0;
+  border-bottom: 1px solid #E0E0E0;
+  empty-cells: hide;
+  margin-bottom: 30px;
+}
+
+.footer__item {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.footer__item-th {
+  padding-bottom: 35px;
+  text-align: left;
+}
+
+.footer__text {
+  text-align: center;
+}
+
+.footer__link {
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.video {
+  background: url(assets/background.png) 0 0 no-repeat, #fff;
+  background-size: 100% 50%;
+  padding: 70px 0 85px 0;
+}
+
+.video__title {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.video__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.video__content {
+  display: block;
+  margin: 0 auto 85px;
+  box-sizing: content-box;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 70px 0 85px 0;
+  width: 970px;
+  height: 430px;
+}
+
+.video__box {
+  text-align: center;
+}
+
+.mgt-20 {
+  margin-top: 20px;
+}
+
+.subscription {
+  padding: 30px 0 35px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.subscription__email {
+  border-radius: 30px 0 0 30px;
+  padding: 14px 149px 13px 33px;
+  color: #999999;
+  box-shadow: 0 0 10px #6f6f6f40;
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.subscription__email:focus {
+  border: 1px solid #4985FF;
+  ;
+}
+
+.subscription__btn {
+  padding: 15px 36px 13px 26px;
+  border-radius: 0 30px 30px 0;
+  background-color: #4985FF;
+  color: #FFFFFF;
+  box-shadow: 0 0 10px #6f6f6f40;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.9;
+}
+
+.subscription__btn:hover {
+  transform: scale(1.02);
+}
+
+.subscription__btn:active {
+  box-shadow: 0 0 10px -2px #000000;
+}
